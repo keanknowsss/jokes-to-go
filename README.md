@@ -1,4 +1,5 @@
-# A Web Application that provides random jokes to the user
+# Jokes To Go
+## A Web Application that provides random jokes to the user
 
 ---
 
@@ -10,7 +11,7 @@ This project aims to use Node and Express to create a web application that has a
 
 Visit the course here: [The Complete 2023 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/38516770#overview)
 
-## Tools:
+### Tools:
 - Node and Express
 - EJS
 - CSS
