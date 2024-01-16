@@ -21,6 +21,7 @@ main {
 
 .title {
     color: #F2E94E;
+    margin-left: -10px;
 }
 
 .title h1 {
@@ -33,23 +34,52 @@ main {
     font-family: 'Seaweed Script', cursive;
     font-size: 30px;
     text-align: right;
-    margin-right: -15px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.title p span {
+    position: absolute;
+    font-family: 'Seaweed Script', cursive;
+    font-size: 25px;
+    top: -1px;
+    right: -25px;
 }
 
 .card {
+    position: relative;
     color: white;
-    padding: 20px 40px;
+    padding: 30px 20px;
     border-radius: 10px;
-    height: 400px;
-    width: min(300px, 80%);
+    min-height: 400px;
+    width: min(350px, 80%);
     background-color: #163020;
     margin-top: 20px;
 }
+
+.card .joke {
+    /* outline: 1px solid black; */
+    padding-left: 20px;
+}
+
+.card .joke p {
+    line-height: 2.5ch;
+    font-size: 18px;
+    letter-spacing: 0.1ch;
+}
+
 
 .joke-content {
     white-space: pre-wrap;
     text-wrap: balance;
     width: 200px;
+}
+.quote {
+    font-size: 72px;
+    font-weight: 900;
+    text-align: right;
+    font-family: 'IM Fell DW Pica', serif;
+    line-height: 1ch;
 }
 
 
