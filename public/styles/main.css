@@ -5,6 +5,10 @@
     font-family: 'Ubuntu', 'Arial', sans-serif;
 }
 
+.test-class {
+    outline: 1px solid red;
+}
+
 body {
     height: max(100%, 100vh);
     background-color: #304D30;
@@ -55,21 +59,21 @@ main {
     width: min(350px, 80%);
     background-color: #163020;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .card .joke {
     /* outline: 1px solid black; */
     padding-left: 20px;
+    height: 100%;
 }
 
-.card .joke p {
+.joke-content {
     line-height: 2.5ch;
     font-size: 18px;
     letter-spacing: 0.1ch;
-}
-
-
-.joke-content {
     white-space: pre-wrap;
     text-wrap: balance;
     width: 200px;
@@ -80,8 +84,116 @@ main {
     text-align: right;
     font-family: 'IM Fell DW Pica', serif;
     line-height: 1ch;
+    pointer-events: none;
+}
+.card-content {
+    margin-bottom: 1rem;
+}
+.categories {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 1rem;
+    flex-wrap: wrap;
+    margin-inline: -8px;
+    margin-bottom: -10px;
 }
 
+li {
+    font-size: 14px;
+    color: whitesmoke;
+    margin: 0;
+    word-wrap: normal;
+    padding: 2px 12px 4px 25px;
+    border-radius: 2rem;
+    background-color: rgb(44, 41, 41);
+    border: 1px solid #F2E94E;
+    position: relative; /* Ensure ::before is positioned relative to the li */
+}
+li::before {
+    content: ""; /* Add content property */
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute; /* Position it absolute relative to the li */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px; /* Adjust the left position as needed */
+}
+
+.Programming {
+    border-color: #C73E1D;
+}
+.Programming::before {
+    background-color: #C73E1D;
+}
+.Misc {
+    border-color: #F3DFA2;
+}
+.Misc::before {
+    background-color: #F3DFA2;
+}
+.Dark {
+    border-color: #0A2463;
+}
+.Dark::before {
+    background-color: #0A2463;
+}
+.Pun {
+    border-color: #03CEA4;
+}
+.Pun::before {
+    background-color: #03CEA4;
+}
+.Spooky {
+    border-color: #223127;
+}
+.Spooky::before {
+    background-color: #223127;
+}
+.Christmas {
+   border-color: #9C0D38; 
+}
+.Christmas::before {
+    background-color: #9C0D38;
+}
+.Nsfw {
+    border-color: #C37D92;
+}
+.Nsfw::before {
+    background-color: #C37D92;
+}
+.Religious {
+    border-color: #E2E2E2;
+}
+.Religious::before {
+    background-color: #E2E2E2;
+}
+.Political {
+    border-color: #495867;
+}
+.Political::before {
+    background-color: #495867;
+}
+.Sexist {
+    border-color: #4E5283 ;
+}
+.Sexist::before {
+    background-color: #4E5283;
+}
+.Racist {
+    border-color: #AB4967;
+}
+.Racist::before {
+    background-color: #AB4967;
+}
+.Explicit {
+    border-color: #705D56;
+}
+.Explicit::before {
+    background-color: #705D56;
+}
 
 /* 
     #163020
@@ -93,3 +205,17 @@ main {
 /* font-family: 'Satisfy', cursive;
 font-family: 'Seaweed Script', cursive;
 font-family: 'Ubuntu', sans-serif; */
+
+/* Programming #C73E1D
+Misc #F3DFA2
+Dark #0A2463
+Pun #03CEA4
+Spooky #223127
+Christmas #9C0D38
+
+nsfw #C37D92
+religious #E2E2E2
+political #495867
+racist #AB4967
+sexist #4E5283 
+explicit #705D56 */
