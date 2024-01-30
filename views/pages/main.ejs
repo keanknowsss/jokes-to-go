@@ -7,14 +7,17 @@
 		<div class="card-content">
 			<p class="quote">"</p>
 			<div class="joke">
-				<p class="joke-content"><%= joke["joke"] %></p>
+				<p class="joke-content" id="joke-content"><%= joke["joke"] %></p>
 			</div>
 		</div>
-		<ul class="categories">
+		<ul class="categories" id="categories">
 			<% categories.forEach(category => { %>
-				<li class="<%= category %>"><%= category %></li>			 
+			<li class="<%= category %>"><%= category %></li>
 			<% }) %>
 		</ul>
+		<button class="refresh" id="refresh">
+			<span class="material-symbols-outlined"> sync </span>
+		</button>
 	</div>
 	<div class="menu"></div>
 </main>

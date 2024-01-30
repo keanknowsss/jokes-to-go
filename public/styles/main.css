@@ -32,6 +32,7 @@ main {
     font-family: 'Satisfy', cursive;
     font-size: 44px;
     line-height: 15px;
+    pointer-events: none;
 }
 
 .title p {
@@ -40,6 +41,7 @@ main {
     text-align: right;
     margin-right: 10px;
     position: relative;
+    pointer-events: none;
 }
 
 .title p span {
@@ -78,6 +80,7 @@ main {
     text-wrap: balance;
     width: 200px;
 }
+
 .quote {
     font-size: 72px;
     font-weight: 900;
@@ -86,9 +89,31 @@ main {
     line-height: 1ch;
     pointer-events: none;
 }
+
 .card-content {
     margin-bottom: 1rem;
 }
+
+.refresh {
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    padding: 8px;
+    background-color: #0CCA4A;
+    border-radius: 100%;
+    box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: 1px black;
+    cursor: pointer;
+}
+
+.refresh span {
+    scale: 0.9;
+}
+
+
 .categories {
     display: flex;
     gap: 5px;
@@ -108,89 +133,117 @@ li {
     border-radius: 2rem;
     background-color: rgb(44, 41, 41);
     border: 1px solid #F2E94E;
-    position: relative; /* Ensure ::before is positioned relative to the li */
+    position: relative;
+    /* Ensure ::before is positioned relative to the li */
 }
+
 li::before {
-    content: ""; /* Add content property */
+    content: "";
+    /* Add content property */
     height: 15px;
     width: 15px;
     background-color: white;
     border-radius: 50%;
-    position: absolute; /* Position it absolute relative to the li */
+    position: absolute;
+    /* Position it absolute relative to the li */
     top: 50%;
     transform: translateY(-50%);
-    left: 3px; /* Adjust the left position as needed */
+    left: 3px;
+    /* Adjust the left position as needed */
 }
 
 .Programming {
     border-color: #C73E1D;
 }
+
 .Programming::before {
     background-color: #C73E1D;
 }
+
 .Misc {
     border-color: #F3DFA2;
 }
+
 .Misc::before {
     background-color: #F3DFA2;
 }
+
 .Dark {
     border-color: #0A2463;
 }
+
 .Dark::before {
     background-color: #0A2463;
 }
+
 .Pun {
     border-color: #03CEA4;
 }
+
 .Pun::before {
     background-color: #03CEA4;
 }
+
 .Spooky {
     border-color: #223127;
 }
+
 .Spooky::before {
     background-color: #223127;
 }
+
 .Christmas {
-   border-color: #9C0D38; 
+    border-color: #9C0D38;
 }
+
 .Christmas::before {
     background-color: #9C0D38;
 }
+
 .Nsfw {
     border-color: #C37D92;
 }
+
 .Nsfw::before {
     background-color: #C37D92;
 }
+
 .Religious {
     border-color: #E2E2E2;
 }
+
 .Religious::before {
     background-color: #E2E2E2;
 }
+
 .Political {
     border-color: #495867;
 }
+
 .Political::before {
     background-color: #495867;
 }
+
 .Sexist {
-    border-color: #4E5283 ;
+    border-color: #4E5283;
 }
+
 .Sexist::before {
     background-color: #4E5283;
 }
+
 .Racist {
     border-color: #AB4967;
 }
+
 .Racist::before {
     background-color: #AB4967;
 }
+
 .Explicit {
     border-color: #705D56;
 }
+
 .Explicit::before {
     background-color: #705D56;
 }
