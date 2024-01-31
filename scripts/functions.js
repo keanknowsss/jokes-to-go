@@ -1,11 +1,13 @@
 import axios from "axios";
+import { config } from "dotenv";
+
+config();
 
 async function getJoke() {
-	const JOKES_API_URL = "https://v2.jokeapi.dev/joke";
-
 	try {
+		const URL = process.env.JOKES_API_URL;
 		const response = await axios.get("Any", {
-			baseURL: JOKES_API_URL,
+			baseURL: URL,
 			params: {
 				type: "single",
 				blacklistFlags: "nsfw,religious,political,racist,sexist,explicit",

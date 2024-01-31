@@ -14,7 +14,6 @@ refreshBtn.addEventListener("click", async function (e) {
 	});
 
 	categoriesContainer.innerHTML = jokesCategory;
-	console.log(jokesCategory)
 });
 
 async function refreshJoke() {
