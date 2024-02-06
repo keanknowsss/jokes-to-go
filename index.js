@@ -7,12 +7,12 @@ const port = 8000;
 const __dirname = path.resolve();
 
 // Middlewares
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 // For Deployment Purposes
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get("/", async (req, res) => {
