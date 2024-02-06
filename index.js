@@ -1,8 +1,10 @@
 import express from "express";
 import { getJoke } from "./scripts/functions.js";
+import path from "path";
 
 const app = express();
 const port = 8000;
+const __dirname = path.resolve();
 
 // Middlewares
 app.use(express.static("public"));
